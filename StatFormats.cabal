@@ -1,0 +1,26 @@
+Name:                LoadTestData
+Version:             0.1
+Synopsis:            Statistical processing of load test request time data
+Description:         Statistical processing of load test request time data
+License:             GPL-3
+License-file:        LICENCE
+Author:              Andreas Jonsson
+Maintainer:          Andreas Jonsson <andreas.jonsson@kreablo.se>
+Copyright:           (c) 2016 Andreas Jonsson
+Cabal-version:       >= 1.9.2
+Build-type:          Simple
+
+Executable load-test-data
+  Main-is: LoadTestData.hs
+  Build-depends: attoparsec,
+                 base,
+                 bytestring,
+                 cassava,
+                 cmdargs,
+                 containers,
+                 mtl,
+                 optparse-applicative,
+                 statistics,
+                 text,
+                 vector
+  Ghc-options: -Wall -Odph
